@@ -1,5 +1,5 @@
 {
-  "name": "@saleor/sdk",
+  "name": "skd-saleor-juan",
   "version": "0.3.0-4",
   "description": "This package contains all queries and mutations that are used in our sample storefront. It can be used for semi-custom or fully-custom (with ability to extend existing queries) storefront solutions.",
   "homepage": "https://getsaleor.com/",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mirumee/saleor-sdk.git"
+    "url": "git://git@github.com/jokubohv/saleor-sdk.git"
   },
   "scripts": {
     "build": "tsc",
@@ -114,5 +114,11 @@
     "react-apollo": "^3.1.5"
   },
   "type": "commonjs",
-  "typings": "./lib/index.d.ts"
+  "typings": "./lib/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/jokubohv/saleor-sdk/issues"
+  },
+  "directories": {
+    "lib": "lib"
+  }
 }
