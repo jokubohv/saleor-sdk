@@ -8,7 +8,7 @@ export const getShop = gql`
         code
         country
       }
-      logUrl
+      logoUrl
       subdomain
       companyId
       companyAddress {
