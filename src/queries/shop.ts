@@ -17,7 +17,10 @@ export const getShop = gql`
         city
         cityArea
         postalCode
-        country
+        country {
+          code
+          country
+        }
         countryArea
         phone
         lat
