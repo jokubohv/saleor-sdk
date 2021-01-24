@@ -25,8 +25,8 @@ export const userCheckoutTokenList = gql`
 
 export const checkoutProductVariants = gql`
   ${checkoutProductVariantFragment}
-  query CheckoutProductVariants($ids: [ID], $channel: String) {
-    productVariants(ids: $ids, first: 100, channel: $channel) {
+  query CheckoutProductVariants($ids: [ID]) {
+    productVariants(ids: $ids, first: 100) {
       edges {
         node {
           ...ProductVariant
