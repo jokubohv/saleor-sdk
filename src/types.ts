@@ -51,7 +51,7 @@ export interface Config {
   /**
    * Default channel slug.
    */
-  channel?: string | null;
+  channel: string;
 }
 
 export type DefaultConfig = Omit<Config, "apiUrl">;
