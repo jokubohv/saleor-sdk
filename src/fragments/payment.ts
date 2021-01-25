@@ -27,6 +27,5 @@ export const paymentGatewayFragment = gql`
       field
       value
     }
-    currencies
   }
 `;
