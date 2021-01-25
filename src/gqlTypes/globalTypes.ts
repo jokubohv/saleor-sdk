@@ -451,7 +451,6 @@ export interface AttributeInput {
 }
 
 export interface CheckoutCreateInput {
-  channel?: string | null;
   lines: (CheckoutLineInput | null)[];
   email?: string | null;
   shippingAddress?: AddressInput | null;
