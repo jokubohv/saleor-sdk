@@ -79,10 +79,10 @@ import {
   CheckoutProductVariants,
   CheckoutProductVariants_productVariants,
 } from "../../queries/gqlTypes/CheckoutProductVariants";
-import {
-  UserCheckoutTokenList,
-  UserCheckoutTokenListVariables,
-} from "../../queries/gqlTypes/UserCheckoutTokenList";
+// import {
+//   UserCheckoutTokenList,
+//   UserCheckoutTokenListVariables,
+// } from "../../queries/gqlTypes/UserCheckoutTokenList";
 import { UserDetails } from "../../queries/gqlTypes/UserDetails";
 import * as UserQueries from "../../queries/user";
 import { filterNotEmptyArrayItems } from "../../utils";
@@ -299,25 +299,25 @@ export class ApolloClientManager {
     let checkout: Checkout | null;
     try {
       checkout = await new Promise(async (resolve, reject) => {
-        let token = checkoutToken;
-        if (isUserSignedIn) {
-          const { data, errors } = await this.client.query<
-            UserCheckoutTokenList,
-            UserCheckoutTokenListVariables
-          >({
-            fetchPolicy: "network-only",
-            query: CheckoutQueries.userCheckoutTokenList,
-            variables: {
-              channel,
-            },
-          });
+        const token = checkoutToken;
+        // if (isUserSignedIn) {
+        //   const { data, errors } = await this.client.query<
+        //     UserCheckoutTokenList,
+        //     UserCheckoutTokenListVariables
+        //   >({
+        //     fetchPolicy: "network-only",
+        //     query: CheckoutQueries.userCheckoutTokenList,
+        //     variables: {
+        //       channel,
+        //     },
+        //   });
 
-          if (errors?.length) {
-            reject(errors);
-          } else if (data.me?.checkoutTokens) {
-            [token] = data.me.checkoutTokens;
-          }
-        }
+        //   if (errors?.length) {
+        //     reject(errors);
+        //   } else if (data.me?.checkoutTokens) {
+        //     [token] = data.me.checkoutTokens;
+        //   }
+        // }
 
         if (token) {
           const observable = this.client.watchQuery<CheckoutDetails, any>({
