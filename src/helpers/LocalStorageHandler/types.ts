@@ -66,6 +66,8 @@ export interface ICheckoutAddress {
     code?: string;
     country?: string;
   };
+  lat?: number;
+  lng?: number;
 }
 
 export interface ICheckoutModelShippingMethod {

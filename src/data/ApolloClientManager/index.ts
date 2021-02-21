@@ -474,7 +474,6 @@ export class ApolloClientManager {
   createCheckout = async (
     email: string,
     lines: Array<{ variantId: string; quantity: number }>,
-    channel: string,
     shippingAddress?: ICheckoutAddress,
     billingAddress?: ICheckoutAddress
   ) => {
@@ -491,12 +490,13 @@ export class ApolloClientManager {
             countryArea: billingAddress.countryArea,
             firstName: billingAddress.firstName,
             lastName: billingAddress.lastName,
+            lat: billingAddress.lat,
+            lng: billingAddress.lng,
             phone: billingAddress.phone,
             postalCode: billingAddress.postalCode,
             streetAddress1: billingAddress.streetAddress1,
             streetAddress2: billingAddress.streetAddress2,
           },
-          channel,
           email,
           lines,
           shippingAddress: shippingAddress && {
@@ -509,6 +509,8 @@ export class ApolloClientManager {
             countryArea: shippingAddress.countryArea,
             firstName: shippingAddress.firstName,
             lastName: shippingAddress.lastName,
+            lat: shippingAddress.lat,
+            lng: shippingAddress.lng,
             phone: shippingAddress.phone,
             postalCode: shippingAddress.postalCode,
             streetAddress1: shippingAddress.streetAddress1,
