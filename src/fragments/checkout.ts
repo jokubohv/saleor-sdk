@@ -32,6 +32,8 @@ export const checkoutAddressFragment = gql`
     phone
     isDefaultBillingAddress
     isDefaultShippingAddress
+    lat
+    lng
   }
 `;
 

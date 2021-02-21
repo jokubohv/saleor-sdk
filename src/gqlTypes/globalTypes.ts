@@ -442,6 +442,8 @@ export interface AddressInput {
   country?: CountryCode | null;
   countryArea?: string | null;
   phone?: string | null;
+  lat?: number | null;
+  lng?: number | null;
 }
 
 export interface AttributeInput {
