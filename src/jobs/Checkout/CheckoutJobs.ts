@@ -67,7 +67,6 @@ class CheckoutJobs extends JobsHandler<{}> {
   createCheckout = async ({
     email,
     lines,
-    channel,
     shippingAddress,
     selectedShippingAddressId,
     billingAddress,
@@ -76,7 +75,6 @@ class CheckoutJobs extends JobsHandler<{}> {
     const { data, error } = await this.apolloClientManager.createCheckout(
       email,
       lines,
-      channel,
       shippingAddress,
       billingAddress
     );
