@@ -199,7 +199,6 @@ export const completeCheckoutMutation = gql`
   ${checkoutErrorFragment}
   mutation CompleteCheckout(
     $checkoutId: ID!
-    $paymentData: JSONString
     $redirectUrl: String
     $storeSource: Boolean
   ) {

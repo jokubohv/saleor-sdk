@@ -44,10 +44,6 @@ export const orderDetailFragment = gql`
         currency
         ...OrderPrice
       }
-      totalPrice {
-        currency
-        ...OrderPrice
-      }
     }
     subtotal {
       ...OrderPrice
