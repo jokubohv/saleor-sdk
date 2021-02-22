@@ -499,6 +499,10 @@ export interface OrderByToken_orderByToken {
    * Total price of shipping.
    */
   shippingPrice: OrderByToken_orderByToken_shippingPrice | null;
+
+  metadata: any;
+
+  privateMetadata: any;
 }
 
 export interface OrderByToken {

@@ -524,6 +524,10 @@ export interface UserOrderByToken_orderByToken {
    * List of order invoices.
    */
   invoices: (UserOrderByToken_orderByToken_invoices | null)[] | null;
+
+  metadata: any;
+
+  privateMetadata: any;
 }
 
 export interface UserOrderByToken {
