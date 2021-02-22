@@ -18,6 +18,14 @@ export const ordersByUser = gql`
             number
             statusDisplay
             created
+            metadata {
+              key
+              value
+            }
+            privateMetadata {
+              key
+              value
+            }
             total {
               gross {
                 amount
