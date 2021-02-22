@@ -60,7 +60,6 @@ export interface CreatePaymentJobInput {
   token?: string;
   billingAddress: ICheckoutAddress;
   creditCard?: ICreditCard;
-  // returnUrl?: string;
 }
 
 export interface CompleteCheckoutJobInput {
