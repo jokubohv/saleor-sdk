@@ -35,7 +35,7 @@ export interface CreatePaymentInput {
   gateway: string;
   billingAddress: ICheckoutAddress;
   token?: string;
-  returnUrl?: string;
+  // returnUrl?: string;
 }
 
 export interface CompleteCheckoutInput {

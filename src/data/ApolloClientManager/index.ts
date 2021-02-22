@@ -894,9 +894,10 @@ export class ApolloClientManager {
     gateway,
     billingAddress,
     token,
-    returnUrl,
-  }: CreatePaymentInput) => {
+  }: // returnUrl,
+  CreatePaymentInput) => {
     try {
+      // removed returnUrl from vars, we might need it later
       const variables = {
         checkoutId,
         paymentInput: {
@@ -917,7 +918,7 @@ export class ApolloClientManager {
             streetAddress2: billingAddress.streetAddress2,
           },
           gateway,
-          returnUrl,
+          // returnUrl,
           token,
         },
       };
