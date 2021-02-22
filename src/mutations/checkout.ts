@@ -216,7 +216,6 @@ export const completeCheckoutMutation = gql`
         ...OrderDetail
       }
       confirmationNeeded
-      confirmationData
     }
   }
 `;
