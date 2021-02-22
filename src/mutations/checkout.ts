@@ -205,7 +205,6 @@ export const completeCheckoutMutation = gql`
   ) {
     checkoutComplete(
       checkoutId: $checkoutId
-      paymentData: $paymentData
       redirectUrl: $redirectUrl
       storeSource: $storeSource
     ) {
