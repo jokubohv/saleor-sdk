@@ -124,7 +124,6 @@ export interface ICheckoutModel {
 export interface IPaymentModel {
   id?: string;
   token?: string;
-  // returnUrl?: string;
   gateway?: string;
   creditCard?: IPaymentCreditCard | null;
   total?: Payment_total | null;

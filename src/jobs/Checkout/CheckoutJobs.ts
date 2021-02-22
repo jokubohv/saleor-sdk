@@ -296,8 +296,8 @@ class CheckoutJobs extends JobsHandler<{}> {
     token,
     billingAddress,
     creditCard,
-    returnUrl,
-  }: CreatePaymentJobInput): PromiseCheckoutJobRunResponse => {
+  }: // returnUrl,
+  CreatePaymentJobInput): PromiseCheckoutJobRunResponse => {
     const payment = LocalStorageHandler.getPayment();
 
     const { data, error } = await this.apolloClientManager.createPayment({
@@ -305,7 +305,7 @@ class CheckoutJobs extends JobsHandler<{}> {
       billingAddress,
       checkoutId,
       gateway,
-      returnUrl,
+      // returnUrl,
       token,
     });
 

@@ -487,7 +487,6 @@ export interface PaymentInput {
   token?: string | null;
   amount?: any | null;
   billingAddress?: AddressInput | null;
-  // returnUrl?: string | null;
 }
 
 export interface PriceRangeInput {
