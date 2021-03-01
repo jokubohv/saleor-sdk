@@ -618,6 +618,8 @@ export class ApolloClientManager {
           countryArea: shippingAddress.countryArea,
           firstName: shippingAddress.firstName,
           lastName: shippingAddress.lastName,
+          lat: shippingAddress.lat,
+          lng: shippingAddress.lng,
           phone: shippingAddress.phone,
           postalCode: shippingAddress.postalCode,
           streetAddress1: shippingAddress.streetAddress1,
