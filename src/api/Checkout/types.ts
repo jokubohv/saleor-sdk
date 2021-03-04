@@ -79,6 +79,7 @@ export interface CreatePaymentInput {
   gateway: string;
   token?: string;
   creditCard?: ICreditCard;
+  returnUrl?: string;
 }
 
 export interface CompleteCheckoutInput {
